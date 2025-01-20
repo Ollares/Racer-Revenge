@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7139111296436402073
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3094025692769637742}
+  - component: {fileID: 9016750032409817955}
+  - component: {fileID: 2153580120538015554}
+  m_Layer: 0
+  m_Name: WeaponHit
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3094025692769637742
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7139111296436402073}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7640744, y: 0.4447377, z: 0.4447381, w: 0.1435502}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.003333333, y: 0.003333334, z: 0.003333333}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9016750032409817955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7139111296436402073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8633fb8384813584f83c58e926a374a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _baseStats:
+    damage: 5
+    speed: 0
+    rate: 1
+  _stats:
+    damage: 0
+    speed: 0
+    rate: 0
+  ammoType: 0
+  vfxTypeMuzzle: 0
+  vfxTypeHit: 0
+--- !u!114 &2153580120538015554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7139111296436402073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f519496f431da93478592c10c83c6acd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  typeWeapon: 2
+  targetAttack: 0
+  typeAttack: 1
+  weaponData: {fileID: 9016750032409817955}
+  maxHeightCurve: 0
+  muzzlePoint:
+  - {fileID: 3094025692769637742}
+  hitLayer: 0
